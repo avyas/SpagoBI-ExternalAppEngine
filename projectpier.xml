@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExternalApplication>
+  <Application name="auth" base="http://bidemo.codref.com/" path="projectpier/index.php" method="POST" execOnce="no">
+    <ProfileParameters>
+      <ProfileParameter name="login[username]" mapTo="pp-username" method="POST" />
+      <ProfileParameter name="login[password]" mapTo="pp-password" method="POST"/>
+    </ProfileParameters>
+    <StaticParameters>
+      <StaticParameter name="c" method="GET">access</StaticParameter>
+      <StaticParameter name="a" method="GET">login</StaticParameter>
+    </StaticParameters>  
+    <RemoveParameters>
+      <RemoveParameter name="SBICONTEXT" />
+      <RemoveParameter name="SBI_COUNTRY" />
+      <RemoveParameter name="SBI_EXECUTION_ID" />
+      <RemoveParameter name="SBI_EXECUTION_ROLE" />
+      <RemoveParameter name="SBI_HOST" />
+      <RemoveParameter name="SBI_LANGUAGE" />
+      <RemoveParameter name="SBI_SPAGO_CONTROLLER" />
+      <RemoveParameter name="SPAGOBI_AUDIT_ID" />
+      <RemoveParameter name="dateformat" />
+      <RemoveParameter name="documentLabel" />
+      <RemoveParameter name="isFromCross" />
+      <RemoveParameter name="id" />
+      <RemoveParameter name="id_description" />
+    </RemoveParameters>
+  </Application>
+  <Application name="database" base="http://bidemo.codref.com/" path="projectpier/index.php" method="GET" execOnce="no">
+    <StaticParameters>
+    </StaticParameters>
+    <SwapParamaters>
+    </SwapParamaters>    
+    <RemoveParameters>
+      <RemoveParameter name="SBICONTEXT" />
+      <RemoveParameter name="SBI_COUNTRY" />
+      <RemoveParameter name="SBI_EXECUTION_ID" />
+      <RemoveParameter name="SBI_EXECUTION_ROLE" />
+      <RemoveParameter name="SBI_HOST" />
+      <RemoveParameter name="SBI_LANGUAGE" />
+      <RemoveParameter name="SBI_SPAGO_CONTROLLER" />
+      <RemoveParameter name="SPAGOBI_AUDIT_ID" />
+      <RemoveParameter name="dateformat" />
+      <RemoveParameter name="documentLabel" />
+      <RemoveParameter name="isFromCross" />
+    </RemoveParameters>
+  </Application>
+</ExternalApplication>

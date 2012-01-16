@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+
+Name: SpagoBIEsternalAppEngine.war
+Implementation-Title: SpagoBIExternalAppEngine
+Implementation-Version: 1.0.0
+
